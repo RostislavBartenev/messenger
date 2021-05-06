@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="index.css" />
+    <title>Messenger</title>
+  </head>
+  <body>
+    <header class="header">
+      <menu class="menu">
+        <li class="menu__item">
+          <img class="menu__btn" src="./images/menu.svg" alt="Menu Button" />
+          <h1 class="menu__title">Messenger</h1>
+        </li>
+        <li class="menu__item">
+          <img src="./images/logo.svg" alt="Logo" class="logo menu__logo" />
+        </li>
+        <li class="menu__item">
+          <img
+            src="./images/notifications.svg"
+            alt="Notifications"
+            class="menu__notification"
+          />
+          <div class="profile">
+            <img
+              src="./images/profilePic.png"
+              alt="Profile"
+              class="profile__pic profile-image"
+            />
+            <h2 class="profile__name">Micheal Hogan</h2>
+          </div>
+        </li>
+      </menu>
+    </header>
+    <main class="main">
+      <section class="contacts">
+        <div class="search">
+          <img class="search__icon" src="./images/search.svg" alt="Search" />
+          <input class="search__input" placeholder="Search contacts" />
+        </div>
+        <ul class="contacts__cards">
+          <li class="contacts__card">
+            <img
+              class="contacts__image profile-image"
+              src="./images/profilePic.png"
+              alt="User 1"
+            />
+            <div class="contacts__info">
+              <h2 class="contacts__name">
+                Clyde Chapman <span class="contacts__date">Now</span>
+              </h2>
+              <p class="contacts__status">
+                It’s hard to say when in our lives each of us become
+              </p>
+            </div>
+          </li>
+        </ul>
+      </section>
+      <section class="content">
+        <div class="content__container">
+          <div class="messages">
+            <div class="messages__info">
+              <h2 class="messages__title">
+                <span class="dot"></span> Sally Hammond
+              </h2>
+              <button class="messages__button">
+                <img
+                  class="messages__icon-back"
+                  src="./images/back.svg"
+                  alt="arrow"
+                />
+                Profile
+              </button>
+            </div>
+            <ul class="messages__list">
+              <li class="message">
+                <div class="message__info">
+                  <img
+                    src="./images/profilePic.png"
+                    alt="Profile Guest"
+                    class="message__profile profile-image"
+                  />
+                  <h2 class="message__name">Sally</h2>
+                  <p class="message__date">1:16 pm</p>
+                </div>
+                <p class="message__text">
+                  It’s hard to say when in our lives each of us become
+                </p>
+              </li>
+              <li class="message message_align_right">
+                <div class="message__info message__info_align_right">
+                  <h2 class="message__name">You</h2>
+                  <p class="message__date">1:16 pm</p>
+                  <img
+                    src="./images/profilePic.png"
+                    alt="Profile Guest"
+                    class="message__profile message__profile_align_right profile-image"
+                  />
+                </div>
+                <p class="message__text message__text_align_right">
+                  It’s hard to say when in our lives each of us become
+                </p>
+              </li>
+            </ul>
+          </div>
+          <div class="sidebar"></div>
+        </div>
+      </section>
+    </main>
+  </body>
+</html>

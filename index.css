@@ -1,0 +1,286 @@
+@import url("./vendor/normalize.css");
+@import url("./vendor/fonts/fonts.css");
+
+*,
+*::after,
+*::before {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  font-family: "Roboto";
+  color: #999999;
+}
+
+a {
+  color: inherit;
+  text-decoration: none;
+}
+
+ul,
+menu {
+  padding: 0;
+  list-style-type: none;
+}
+
+.profile-image {
+  width: 40px;
+  height: 40px;
+  border-radius: 50%;
+  object-fit: cover;
+}
+
+.main {
+  display: flex;
+}
+
+.header {
+  padding: 0 30px;
+  height: 90px;
+  border-bottom: 2px solid #f0f0f0;
+}
+
+.menu {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  height: 100%;
+  position: relative;
+}
+
+.menu__item {
+  display: flex;
+}
+
+.menu__btn {
+  margin-right: 35px;
+}
+
+.menu__title {
+  font-style: normal;
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 30px;
+  color: #999999;
+}
+
+.menu__notification {
+  margin-right: 90px;
+}
+
+.profile {
+  display: flex;
+  align-items: center;
+}
+
+.profile__pic {
+  margin-right: 20px;
+}
+
+.profile__name {
+  font-style: normal;
+  font-weight: 500;
+  font-size: 13px;
+  line-height: 30px;
+}
+
+.contacts {
+  max-width: 270px;
+  background-color: #f2f2f2;
+  padding: 30px;
+  border-right: 2px solid #f0f0f0;
+  height: calc(100vh - 90px);
+}
+
+.search {
+  display: flex;
+  align-items: center;
+  margin-bottom: 30px;
+}
+
+.search__icon {
+  margin-right: 25px;
+}
+
+.search__input {
+  font-style: normal;
+  font-weight: 500;
+  font-size: 13px;
+  line-height: 20px;
+  background: none;
+  border: none;
+}
+
+.contacts__cards {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+
+.contacts__card {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.contacts__image {
+  margin-right: 20px;
+}
+
+.contacts__name {
+  font-style: normal;
+  font-weight: 500;
+  font-size: 13px;
+  line-height: 20px;
+  color: #808080;
+}
+
+.contacts__status {
+  font-style: normal;
+  font-weight: 500;
+  font-size: 12px;
+  line-height: 20px;
+  color: #b3b3b3;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+  overflow: hidden;
+  width: 150px;
+}
+
+.contacts__date {
+  font-style: normal;
+  font-weight: 500;
+  font-size: 12px;
+  line-height: 20px;
+  color: #b3b3b3;
+  margin-left: 12px;
+}
+
+.content {
+  padding: 30px;
+  background-color: #f2f2f2;
+  width: 100%;
+  height: calc(100vh - 90px);
+}
+
+.content__container {
+  background: #fff;
+  display: flex;
+  height: 100%;
+}
+
+.messages {
+  display: flex;
+  flex-direction: column;
+  width: 70%;
+  border-right: 2px solid #f0f0f0;
+}
+
+.messages__info {
+  display: flex;
+  align-items: center;
+  width: 100%;
+  padding: 25px 20px;
+  border-bottom: 2px solid #f0f0f0;
+}
+
+.messages__button {
+  background: none;
+  border: 2px solid #f0f0f0;
+  border-radius: 28px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 10px 27px 10px 17px;
+  margin-left: auto;
+}
+
+.messages__icon-back {
+  margin-right: 6px;
+}
+
+.messages__title {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-style: normal;
+  font-weight: 500;
+  font-size: 14px;
+  line-height: 30px;
+  color: #808080;
+  margin-left: auto;
+}
+
+.dot {
+  width: 9px;
+  height: 9px;
+  background: #2ccc71;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-radius: 50%;
+  margin-right: 9px;
+}
+
+.messages__list {
+  padding: 15px 30px;
+}
+
+.message {
+  max-width: 405px;
+  margin-bottom: 15px;
+}
+
+.message_align_right {
+  margin-left: auto;
+  justify-content: flex-end;
+}
+
+.message__profile {
+  margin-right: 25px;
+}
+
+.message__profile_align_right {
+  margin-right: 0;
+  margin-left: 25px;
+}
+
+.message__info {
+  display: flex;
+  align-items: center;
+}
+
+.message__info_align_right {
+  justify-content: flex-end;
+}
+
+.message__name {
+  font-style: normal;
+  font-weight: 500;
+  font-size: 13px;
+  line-height: 20px;
+  color: #808080;
+  margin-right: 7px;
+}
+
+.message__date {
+  font-style: normal;
+  font-weight: 500;
+  font-size: 13px;
+  line-height: 20px;
+  color: #b3b3b3;
+}
+
+.message__text {
+  background-color: #f7f7f7;
+  padding: 20px;
+  border-radius: 15px;
+  margin-left: 65px;
+}
+
+.message__text_align_right {
+  margin-left: 0;
+  margin-right: 65px;
+  background-color: royalblue;
+  color: white;
+}
