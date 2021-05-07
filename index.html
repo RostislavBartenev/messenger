@@ -14,25 +14,25 @@
           <img class="menu__btn" src="./images/menu.svg" alt="Menu Button" />
           <h1 class="menu__title">Messenger</h1>
         </li>
-        <li class="menu__item">
-          <img src="./images/logo.svg" alt="Logo" class="logo menu__logo" />
-        </li>
-        <li class="menu__item">
-          <img
-            src="./images/notifications.svg"
-            alt="Notifications"
-            class="menu__notification"
-          />
-          <div class="profile">
-            <img
-              src="./images/profilePic.png"
-              alt="Profile"
-              class="profile__pic profile-image"
-            />
-            <h2 class="profile__name">Micheal Hogan</h2>
-          </div>
-        </li>
       </menu>
+      <div class="logo">
+        <img class="logo__image" src="./images/logo.svg" alt="Logo" />
+      </div>
+      <div class="header__profile">
+        <img
+          src="./images/notifications.svg"
+          alt="Notifications"
+          class="header__notification"
+        />
+        <div class="profile">
+          <img
+            src="./images/profilePic.png"
+            alt="Profile"
+            class="profile__pic profile-image"
+          />
+          <h2 class="profile__name">Micheal Hogan</h2>
+        </div>
+      </div>
     </header>
     <main class="main">
       <section class="contacts">
@@ -59,53 +59,91 @@
         </ul>
       </section>
       <section class="content">
-        <div class="content__container">
-          <div class="messages">
-            <div class="messages__info">
-              <h2 class="messages__title">
-                <span class="dot"></span> Sally Hammond
-              </h2>
-              <button class="messages__button">
+        <div class="messages">
+          <div class="messages__info">
+            <h2 class="messages__title">
+              <span class="dot"></span> Sally Hammond
+            </h2>
+          </div>
+          <ul class="messages__list">
+            <li class="message">
+              <div class="message__info">
                 <img
-                  class="messages__icon-back"
-                  src="./images/back.svg"
-                  alt="arrow"
+                  src="./images/profilePic.png"
+                  alt="Profile Guest"
+                  class="message__profile profile-image"
                 />
-                Profile
-              </button>
+                <h2 class="message__name">Sally</h2>
+                <p class="message__date">1:16 pm</p>
+              </div>
+              <p class="message__text">
+                It’s hard to say when in our lives each of us become
+              </p>
+            </li>
+            <li class="message message_align_right">
+              <div class="message__info message__info_align_right">
+                <h2 class="message__name">You</h2>
+                <p class="message__date">1:16 pm</p>
+                <img
+                  src="./images/profilePic.png"
+                  alt="Profile Guest"
+                  class="message__profile message__profile_align_right profile-image"
+                />
+              </div>
+              <p class="message__text message__text_align_right">
+                It’s hard to say when in our lives each of us become
+              </p>
+            </li>
+            <li class="message">
+              <div class="message__info">
+                <img
+                  src="./images/profilePic.png"
+                  alt="Profile Guest"
+                  class="message__profile profile-image"
+                />
+                <h2 class="message__name">Sally</h2>
+                <p class="message__date">1:16 pm</p>
+              </div>
+              <p class="message__text">
+                <img
+                  class="message__image"
+                  src="./images/link-bg.png"
+                  alt="Image"
+                />
+              </p>
+            </li>
+          </ul>
+          <div class="message__send">
+            <div class="message__plus">
+              <img
+                src="./images/plus.svg"
+                alt="plus"
+                class="message3__plus-icon"
+              />
             </div>
-            <ul class="messages__list">
-              <li class="message">
-                <div class="message__info">
-                  <img
-                    src="./images/profilePic.png"
-                    alt="Profile Guest"
-                    class="message__profile profile-image"
-                  />
-                  <h2 class="message__name">Sally</h2>
-                  <p class="message__date">1:16 pm</p>
-                </div>
-                <p class="message__text">
-                  It’s hard to say when in our lives each of us become
-                </p>
+            <input
+              placeholder="Message..."
+              type="text"
+              class="message__input"
+            />
+            <ul class="addition">
+              <li class="addition__item">
+                <img
+                  class="addition__item-icon"
+                  src="./images/photo.svg"
+                  alt="photo"
+                />
               </li>
-              <li class="message message_align_right">
-                <div class="message__info message__info_align_right">
-                  <h2 class="message__name">You</h2>
-                  <p class="message__date">1:16 pm</p>
-                  <img
-                    src="./images/profilePic.png"
-                    alt="Profile Guest"
-                    class="message__profile message__profile_align_right profile-image"
-                  />
-                </div>
-                <p class="message__text message__text_align_right">
-                  It’s hard to say when in our lives each of us become
-                </p>
+              <li class="addition__item">
+                <img
+                  class="addition__item-icon"
+                  src="./images/library.svg"
+                  alt="library"
+                />
               </li>
             </ul>
+            <img class="message__button" src="./images/send.svg" alt="send" />
           </div>
-          <div class="sidebar"></div>
         </div>
       </section>
     </main>
