@@ -185,6 +185,7 @@ menu {
   display: flex;
   flex-direction: column;
   background: #fff;
+  height: 100%;
 }
 
 .messages__info {
@@ -231,6 +232,7 @@ menu {
 .messages__list {
   padding: 15px 30px;
   overflow-y: auto;
+  height: 100%;
 }
 
 .message {
