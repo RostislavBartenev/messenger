@@ -359,3 +359,42 @@ menu {
   line-height: 30px;
   color: #808080;
 }
+
+@media screen and (max-width: 767px) {
+  .contacts {
+    display: none;
+  }
+
+  .content {
+    padding: 0;
+  }
+
+  .messages__info {
+    padding: 0;
+  }
+
+  .header {
+    padding: 0;
+    justify-content: space-around;
+  }
+
+  .menu {
+    position: initial;
+  }
+
+  .logo {
+    display: none;
+  }
+
+  .header__profile {
+    position: initial;
+  }
+
+  .header__notification {
+    display: none;
+  }
+
+  .menu__btn {
+    margin-right: 0;
+  }
+}
