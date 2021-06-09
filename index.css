@@ -323,6 +323,9 @@ menu {
   height: 25px;
   opacity: 0.3;
   position: relative;
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
 
 .message__button {
